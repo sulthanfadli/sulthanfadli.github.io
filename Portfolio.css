@@ -20,6 +20,7 @@ body{
 #navbar{
     background-color: white;
     padding-top: 2%;
+    margin-right: 2%;
 }
 
 #logo{
@@ -44,9 +45,10 @@ body{
 
 #hometext{
     margin-top: 12%;
-    margin-left: 12%;
-    margin-right: 5%;
+    margin-left: 6%;
     max-width: 100%;
+    padding-right: 0%;
+    margin-right: 8%;
 }
 
 #Hello{
@@ -74,6 +76,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     margin-left: 8%;
+    padding-left: 12%;
     max-width: 90%;
     min-width: 90%;
 }
@@ -257,7 +260,7 @@ ul{
 
   .card{
     cursor: pointer;
-    width: 340px;
+    max-width: 340px;
     height: 480px;
     margin-top: 15%;
   }
@@ -273,7 +276,7 @@ ul{
     height: 100%;
     background-color: #f1f1f1;
   }
-  
+
   .front{
     transform: perspective(600px) rotateY(0deg);
     background-color: #f1f1f1;
@@ -314,3 +317,4 @@ ul{
   }
   
   
+/*---------------------*/
