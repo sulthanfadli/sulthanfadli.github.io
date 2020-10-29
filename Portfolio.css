@@ -271,6 +271,7 @@ ul{
   }
   .front img{
     height: 100%;
+    background-color: white;
   }
   .front{
     transform: perspective(600px) rotateY(0deg);
