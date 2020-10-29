@@ -1,0 +1,313 @@
+@charset "utf-8";
+@font-face{
+    src: url("font/Product\ Sans\ Regular.ttf");
+    font-family: PS;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 100%;
+}
+
+.row{
+    max-width: 100%;
+    margin: 0%;
+}
+
+#navbar{
+    background-color: white;
+    padding-top: 2%;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+    padding-left: 30pt;
+}
+
+#navtext{
+    margin-left: auto;
+    font-size: x-large; 
+    font-family: PS;
+}
+
+#navitem{
+    padding-left: 30pt;
+}
+
+
+
+/*-------------------------------*/
+
+#hometext{
+    margin-top: 12%;
+    margin-left: 12%;
+    margin-right: 5%;
+    max-width: 100%;
+}
+
+#Hello{
+    font-size: 300%;
+    font-family: PS;
+    color: #262931;
+    margin-bottom: -2%
+}
+
+#name{
+    font-size: 500%;
+    font-family: PS;
+    color: #0061B7;
+}
+
+#subtitle{
+    font-size: 270%;
+    font-family: PS;
+    color: #262931;
+    margin-top: -2%;
+}
+
+#person{
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-left: 8%;
+    max-width: 90%;
+    min-width: 90%;
+}
+
+#button1{
+    background-color: white;
+    border-color: #0061B7;
+    border-width: 3px;
+    max-width: 80%;
+    font-family: PS;
+    font-size: 180%;
+    margin-top: 4%;
+}
+
+/*-------------------------------*/
+
+#about{
+    background-color: #262931;
+    background-size: 100%;
+}
+
+#foto2{
+    margin-right: 5%;
+    max-width: 80%;
+    margin-top: 20%;
+    min-width: 80%;
+}
+
+#title-about{
+    color: white;
+    font-family: PS;
+    font-size: 520%;
+    margin-top: 5%;
+}
+
+#text-about{
+    color: white;
+    font-family: PS;
+    font-size: 160%;
+}
+
+#aboutcontent{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-left: 8%;
+
+}
+
+/*-------------------------------*/
+#container{
+    justify-content: center;
+    margin-bottom: 12%;
+}
+
+#title-skills{
+    color: #262931;
+    margin-top: 18%;
+    font-family: PS;
+    font-size: 520%;
+    text-align: center;
+}
+
+#skills{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 8%;
+}
+
+#shadow{
+    max-height: 120%;
+    max-width: 90%;
+    margin-top: 15%;
+    justify-content: center;
+}
+
+#foto-skills{
+    width: 55%;
+    height: auto;
+    padding-top: 30%;
+}
+
+#text-skills{
+    font-family: PS;
+    font-size: 200%;
+    color: #262931;
+    margin-top: 12%;
+    padding-bottom: 15%;
+}
+
+/*-------------------------------*/
+
+#title-projects{
+    color: #262931;
+    
+    margin-top: 10%;
+    font-family: PS;
+    font-size: 520%;
+    text-align: center;
+}
+
+#foto-projects1{
+    margin-top: 20%;
+    max-width: 40%;
+}
+
+#foto-projects2{
+    margin-top: 20%;
+    max-width: 85%;
+}
+
+#foto-projects3{
+    margin-top: 20%;
+    max-width: 50%;
+}
+
+/*-------------------------------*/
+
+#footer{
+    background-color: #262931;
+    margin-bottom: 0%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#footerlogo{
+    max-width: 70px;  
+}
+
+#footertext{
+    color: white;
+    font-family: PS;
+    font-size: 150%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+#footertext1{
+    color: white;
+    font-family: PS;
+    font-size: 160%;
+    padding-top: 1%;
+    text-align: center;
+
+}
+
+/*----------------------*/
+
+.nav {
+    position:fixed;
+    right:0;
+    margin-right: 3%;
+    margin-top: 16%;
+    z-index: 999;
+}
+
+.nav a {
+    display:block;
+    margin:20px;
+    height:15px;
+    width:15px;
+    border-radius:100%;
+    background:rgb(230, 230, 230);
+}
+
+.nav a:hover {
+    background: #0061B7;
+}
+
+.nav a.active{
+    background: red;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*----------------------*/
+
+
+  .card{
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+    margin-top: 15%;
+  }
+  .front,.back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front img{
+    height: 100%;
+  }
+  .front{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .back{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .back-content{
+    margin-top: 40%;
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+  }
+  .sm{
+    margin: 20px 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  
+  
